@@ -1,5 +1,7 @@
 package co.edu.uniquindio.poo.proyectojfx;
 
+import co.edu.uniquindio.poo.proyectojfx.Modelo.Club;
+import co.edu.uniquindio.poo.proyectojfx.Modelo.ClubManager;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

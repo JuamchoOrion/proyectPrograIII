@@ -16,6 +16,11 @@ public class Entrenador {
         this.id = id;
     }
 
+    public Entrenador(String nombre, String id) {
+        this.nombre = nombre;
+        this.id = id;
+    }
+
     public void setId(String id) {
         this.id = id;
     }

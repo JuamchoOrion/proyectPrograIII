@@ -1,17 +1,17 @@
 package co.edu.uniquindio.poo.proyectojfx;
 
-import javafx.fxml.FXML;
-import javafx.scene.control.TextField;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Alert.AlertType;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-import java.io.IOException;
 import co.edu.uniquindio.poo.proyectojfx.Modelo.Club;
 import co.edu.uniquindio.poo.proyectojfx.Modelo.ClubManager;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.control.TextField;
+import javafx.scene.control.Button;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class LoginAdminController {
 
@@ -24,7 +24,7 @@ public class LoginAdminController {
     @FXML
     private Button ingresoLoginAdmin;
 
-    private Club club = ClubManager.getClubInstance(); // Obtén la instancia del Club
+    private Club club = ClubManager.getClubInstance(); // Obtén la instancia del Club desde ClubManager
 
     @FXML
     public void initialize() {
@@ -32,10 +32,11 @@ public class LoginAdminController {
     }
 
     private void login() {
-        //Tomar Inputs
+        // Tomar Inputs
         String nombre = inputNombre.getText();
         String idString = inputId.getText();
-//Verificar que no esten vacios
+
+        // Verificar que no estén vacíos
         if (nombre.isEmpty() || idString.isEmpty()) {
             showAlert(AlertType.ERROR, "Campos vacíos", "Por favor, complete todos los campos.");
             return;
@@ -48,9 +49,9 @@ public class LoginAdminController {
             showAlert(AlertType.ERROR, "ID inválido", "El ID debe ser un número entero.");
             return;
         }
-        //si nombre e id coinciden en la lista de club entonces argar vista de administrador
+
+        // Si nombre e ID coinciden en la lista de Club, cargar la vista de administrador
         if (club.verificarAdministrador(nombre, id)) {
-            // Cargar la vista de administrador
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("administrador.fxml"));
                 Scene scene = new Scene(loader.load());

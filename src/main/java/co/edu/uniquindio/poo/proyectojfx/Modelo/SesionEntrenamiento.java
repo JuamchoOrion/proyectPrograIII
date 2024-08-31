@@ -3,13 +3,13 @@ package co.edu.uniquindio.poo.proyectojfx.Modelo;
 import java.time.LocalDate;
 
 public class SesionEntrenamiento {
-    private LocalDate fechaInicio;
+    private String fechaInicio;
     private double duracion;
     private Estado estado;
     private Deporte deporte;
     private Entrenador entrenador;
 
-    public SesionEntrenamiento(LocalDate fechaInicio, double duracion, Estado estado, Deporte deporte, Entrenador entrenador) {
+    public SesionEntrenamiento(String fechaInicio, double duracion, Estado estado, Deporte deporte, Entrenador entrenador) {
         this.fechaInicio = fechaInicio;
         this.duracion = duracion;
         this.estado = estado;
@@ -17,11 +17,11 @@ public class SesionEntrenamiento {
         this.entrenador = entrenador;
     }
 
-    public LocalDate getFechaInicio() {
+    public String getFechaInicio() {
         return fechaInicio;
     }
 
-    public void setFechaInicio(LocalDate fechaInicio) {
+    public void setFechaInicio(String fechaInicio) {
         this.fechaInicio = fechaInicio;
     }
 

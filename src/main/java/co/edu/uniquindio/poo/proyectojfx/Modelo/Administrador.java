@@ -10,6 +10,12 @@ public class Administrador implements GestionSesiones, GestionEntrenadores, Gest
     public Administrador() {
     }
 
+    public Administrador(String nombre, int id) {
+        this.nombre = nombre;
+        this.id = id;
+    }
+
+
     // Getters y Setters
     public String getNombre() {
         return nombre;
@@ -29,12 +35,14 @@ public class Administrador implements GestionSesiones, GestionEntrenadores, Gest
 
     // Implementación de métodos de Gestión de Sesiones
     @Override
-    public SesionEntrenamiento crearSesion(LocalDate fechaInicio, double duracion, Estado estado, Deporte deporte, Entrenador entrenador) {
+    public SesionEntrenamiento crearSesion(String fechaInicio, double duracion, Estado estado, Deporte deporte, Entrenador entrenador) {
         return new SesionEntrenamiento(fechaInicio, duracion, estado, deporte, entrenador);
     }
 
+
+
     @Override
-    public SesionEntrenamiento editarSesion(SesionEntrenamiento sesion, LocalDate fechaInicio, double duracion, Estado estado, Deporte deporte, Entrenador entrenador) {
+    public SesionEntrenamiento editarSesion(SesionEntrenamiento sesion, String fechaInicio, double duracion, Estado estado, Deporte deporte, Entrenador entrenador) {
         sesion.setFechaInicio(fechaInicio);
         sesion.setDuracion(duracion);
         sesion.setEstado(estado);

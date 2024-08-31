@@ -16,6 +16,7 @@ public class Club {
     private List<Entrenador> entrenadores;
     private List<Deporte> deportes;
     private List<Administrador> administrativos;
+    private List<SesionEntrenamiento> sesiones;
 
     /**
      * Constructor vacío.
@@ -35,6 +36,9 @@ public class Club {
         this.miembros = miembros;
     }
 
+    public Club(List<SesionEntrenamiento> sesiones, String clubDeportivo, List<Miembro> miembros, List<Entrenador> entrenadores, List<Deporte> deportes, List<Administrador> administrativos) {
+    }
+
     // Getters y Setters
 
     public List<SesionEntrenamiento> getSesionesEntrenamiento() {
@@ -43,6 +47,14 @@ public class Club {
 
     public void setSesionesEntrenamiento(List<SesionEntrenamiento> sesionesEntrenamiento) {
         this.sesionesEntrenamiento = sesionesEntrenamiento;
+    }
+
+    public List<Administrador> getAdministrativos() {
+        return administrativos;
+    }
+
+    public List<SesionEntrenamiento> getSesiones() {
+        return sesiones;
     }
 
     public String getNombre() {
@@ -120,5 +132,13 @@ public class Club {
     public boolean verificarAdministrador(String nombre, int id) {
         return administrativos.stream()
                 .anyMatch(a -> a.getNombre().equals(nombre) && a.getId() == id);
+    }
+
+    public void setAdministrativos(List<Administrador> administrativos) {
+        this.administrativos= administrativos;
+    }
+
+    public void setSesiones(List<SesionEntrenamiento> sesiones) {
+        this.sesiones =sesiones;
     }
 }

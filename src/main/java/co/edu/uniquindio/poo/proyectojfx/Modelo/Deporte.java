@@ -21,6 +21,12 @@ public class Deporte {
         this.miembros = miembros;
     }
 
+    public Deporte(String nombre, String descripcion, Dificultad dificultad) {
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.dificultad = dificultad;
+    }
+
     public List<Miembro> getMiembros() {
         return miembros;
     }
