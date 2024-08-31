@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.proyectojfx.LoginAdminController">
+   <children>
+      <AnchorPane layoutX="76.0" layoutY="88.0" prefHeight="25.0" prefWidth="100.0" />
+      <HBox layoutX="105.0" layoutY="25.0" prefHeight="36.0" prefWidth="291.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="254.0" text="Ingrese su nombre:" />
+            <TextField fx:id="inputNombre" prefHeight="26.0" prefWidth="308.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="105.0" layoutY="70.0" prefHeight="36.0" prefWidth="291.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="254.0" text="Ingrese su id:" />
+            <TextField fx:id="inputId" prefHeight="26.0" prefWidth="308.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

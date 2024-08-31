@@ -21,7 +21,7 @@
           <Button mnemonicParsing="false" text="Administrador" />
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Imagenes/blogger.png" />
+                  <Image url="@Imagenes/blogger.png" />
                </image>
             </ImageView>
         </items>
@@ -31,7 +31,7 @@
           <Button mnemonicParsing="false" text="Miembro" />
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Imagenes/grupo.png" />
+                  <Image url="@Imagenes/grupo.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
@@ -42,7 +42,7 @@
             <Button mnemonicParsing="false" text="Entrenador" />
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Imagenes/personal.png" />
+                  <Image url="@Imagenes/personal.png" />
                </image>
             </ImageView>
          </items>
