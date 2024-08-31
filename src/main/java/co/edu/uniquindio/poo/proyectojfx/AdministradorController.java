@@ -61,35 +61,48 @@ public class AdministradorController {
 
     private Club club;
 
-    public void setClub(Club club) {
-        this.club = club;
-        this.deportesList.setAll(club.getDeportes());
-        this.entrenadoresList.setAll(club.getEntrenadores());
-        this.sesionesList.setAll(club.getSesiones());
-
-        // Imprimir datos para verificar
-        System.out.println("Deportes: " + deportesList);
-        System.out.println("Entrenadores: " + entrenadoresList);
-        System.out.println("Sesiones: " + sesionesList);
-
-        comboDeporte.setItems(deportesList);
-        comboEntrenador.setItems(entrenadoresList);
-        tablaSesiones.setItems(sesionesList);
-
-        // Seleccionar los primeros elementos por defecto
-        comboDeporte.getSelectionModel().selectFirst();
-        comboEntrenador.getSelectionModel().selectFirst();
-    }
-
-
     @FXML
     public void initialize() {
+        // Inicializar las columnas de la tabla
         sesion.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getFechaInicio()));
         fecha.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getFechaInicio()));
         duracion.setCellValueFactory(cellData -> new SimpleDoubleProperty(cellData.getValue().getDuracion()).asObject());
         estado.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getEstado().name()));
         deporte.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getDeporte().toString()));
         entrenador.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getEntrenador().toString()));
+    }
+
+    public void setClub(Club club) {
+        this.club = club;
+
+        // Inicializar las listas
+        deportesList.setAll(club.getDeportes());
+        entrenadoresList.setAll(club.getEntrenadores());
+        sesionesList.setAll(club.getSesiones());
+
+        // Imprimir datos para verificar
+        System.out.println("Deportes: " + deportesList);
+        System.out.println("Entrenadores: " + entrenadoresList);
+        System.out.println("Sesiones: " + sesionesList);
+
+        // Asegúrate de que los elementos no sean null antes de intentar usarlos
+        if (comboDeporte != null) {
+            comboDeporte.setItems(deportesList);
+        }
+        if (comboEntrenador != null) {
+            comboEntrenador.setItems(entrenadoresList);
+        }
+        if (tablaSesiones != null) {
+            tablaSesiones.setItems(sesionesList);
+        }
+
+        // Seleccionar los primeros elementos por defecto
+        if (!deportesList.isEmpty()) {
+            comboDeporte.getSelectionModel().selectFirst();
+        }
+        if (!entrenadoresList.isEmpty()) {
+            comboEntrenador.getSelectionModel().selectFirst();
+        }
     }
 
     @FXML
@@ -147,8 +160,12 @@ public class AdministradorController {
         txtEstado.clear();
         comboDeporte.getSelectionModel().clearSelection();
         comboEntrenador.getSelectionModel().clearSelection();
-        comboDeporte.getSelectionModel().selectFirst();
-        comboEntrenador.getSelectionModel().selectFirst();
+        if (!deportesList.isEmpty()) {
+            comboDeporte.getSelectionModel().selectFirst();
+        }
+        if (!entrenadoresList.isEmpty()) {
+            comboEntrenador.getSelectionModel().selectFirst();
+        }
     }
 
     private void showAlert(Alert.AlertType type, String title, String header, String content) {
