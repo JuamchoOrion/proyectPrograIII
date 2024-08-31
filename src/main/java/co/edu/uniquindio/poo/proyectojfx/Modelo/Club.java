@@ -1,5 +1,6 @@
 package co.edu.uniquindio.poo.proyectojfx.Modelo;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -110,7 +111,6 @@ public class Club {
                 .filter(sesion -> sesion.getEntrenador().equals(entrenador))
                 .collect(Collectors.toList());
     }
-
     /**
      * Verifica si un administrador con el nombre y ID proporcionados existe en el club.
      * @param nombre Nombre del administrador.

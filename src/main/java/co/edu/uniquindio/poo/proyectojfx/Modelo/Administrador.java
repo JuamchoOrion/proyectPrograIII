@@ -45,8 +45,8 @@ public class Administrador implements GestionSesiones, GestionEntrenadores, Gest
 
     @Override
     public void eliminarSesion(Club club, SesionEntrenamiento sesionEntrenamiento) {
-        if (club.getSesionesEntrenamieno().contains(sesionEntrenamiento)) {
-            club.getSesionesEntrenamieno().remove(sesionEntrenamiento);
+        if (club.getSesionesEntrenamiento().contains(sesionEntrenamiento)) {
+            club.getSesionesEntrenamiento().remove(sesionEntrenamiento);
         } else {
             throw new IllegalArgumentException("La sesión no existe.");
         }
