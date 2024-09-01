@@ -66,11 +66,11 @@ public class Administrador implements GestionSesiones, GestionEntrenadores, Gest
     }
 
     // Método para inscribir a miembros
-    public void inscribirMiembro(Miembro miembro, Deporte deporte) {
-        if (miembro instanceof Joven && deporte.getDificultad().equals(Dificultad.ALTO)) {
+    public void inscribirMiembro(Miembro miembro, SesionEntrenamiento sesion) {
+        if (miembro instanceof Joven && sesion.getDeporte().getDificultad().equals(Dificultad.ALTO)) {
             throw new IllegalArgumentException("Un joven no puede inscribirse en deportes de alta dificultad.");
         } else {
-            deporte.addMember(miembro);
+            sesion.getDeporte().addMember(miembro);
         }
     }
 

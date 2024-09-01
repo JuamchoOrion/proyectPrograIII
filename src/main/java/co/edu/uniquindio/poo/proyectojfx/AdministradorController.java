@@ -6,7 +6,13 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class AdministradorController {
 
@@ -153,7 +159,33 @@ public class AdministradorController {
             }
         }
     }
+    @FXML
+    private void mostrarDeportes() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/uniquindio/poo/proyectojfx/DeportesView.fxml"));
+        Parent root = loader.load();
 
+        DeportesController controller = loader.getController();
+        controller.setClub(club);
+
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.setTitle("Deportes del Club");
+        stage.show();
+    }
+
+    @FXML
+    private void mostrarEntrenadores() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/uniquindio/poo/proyectojfx/EntrenadoresView.fxml"));
+        Parent root = loader.load();
+
+        EntrenadoresController controller = loader.getController();
+        controller.setClub(club);
+
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.setTitle("Entrenadores del Club");
+        stage.show();
+    }
     private void limpiarCampos() {
         txtFecha.clear();
         txtDuracion.clear();
@@ -175,5 +207,30 @@ public class AdministradorController {
         alert.setContentText(content);
         alert.showAndWait();
     }
+    public void handleAgregarMiembro() { // Este es el nombre correcto del método
+        SesionEntrenamiento sesionSeleccionada = tablaSesiones.getSelectionModel().getSelectedItem();
+
+        if (sesionSeleccionada != null) {
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("AgregarMiembro.fxml"));
+                Parent root = loader.load();
+
+                AgregarMiembroController agregarMiembroController = loader.getController();
+                agregarMiembroController.setSesion(sesionSeleccionada);
+                agregarMiembroController.setClub(club);  // Pasar la instancia del Club
+
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                stage.show();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            // Mostrar una advertencia si no se selecciona ninguna sesión
+            System.out.println("Por favor, seleccione una sesión primero.");
+        }
+    }
+
+
 
 }

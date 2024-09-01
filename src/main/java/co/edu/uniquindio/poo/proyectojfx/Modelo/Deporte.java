@@ -2,10 +2,13 @@ package co.edu.uniquindio.poo.proyectojfx.Modelo;
 
 
 import java.lang.reflect.Member;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Deporte {
     public Deporte(){
+        this.entrenadores = new ArrayList<>();
+        this.miembros = new ArrayList<>();
     }
     private String nombre;
     private String descripcion;
@@ -17,14 +20,16 @@ public class Deporte {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.dificultad = dificultad;
-        this.entrenadores = entrenadores;
-        this.miembros = miembros;
+        this.entrenadores = entrenadores != null ? entrenadores : new ArrayList<>();
+        this.miembros = miembros != null ? miembros : new ArrayList<>();
     }
 
     public Deporte(String nombre, String descripcion, Dificultad dificultad) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.dificultad = dificultad;
+        this.entrenadores = new ArrayList<>();
+        this.miembros = new ArrayList<>();
     }
 
     public List<Miembro> getMiembros() {
@@ -68,7 +73,12 @@ public class Deporte {
     }
 
     public void addMember(Miembro member){
-        miembros.add(member);
+        if(member instanceof Joven && this.dificultad.equals(Dificultad.ALTO)){
+            throw new IllegalArgumentException("no se puede inscrbir en dificultad alta si es joven");
+        }
+        else{
+            miembros.add(member);
+        }
     }
 
     @Override

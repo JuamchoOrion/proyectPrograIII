@@ -14,7 +14,8 @@ public class DatosIniciales {
         deportes.add(d1);
         Deporte d2=new Deporte("Futbol","balon",Dificultad.MEDIO);
         deportes.add(d2);
-
+        Deporte d3 = new Deporte("Box","Cuerpo a cuerpo",Dificultad.ALTO);
+        deportes.add(d3);
         List<Entrenador> entrenadores = new ArrayList<>();
         Entrenador e1 = new Entrenador("Francisco","2468");
         entrenadores.add(e1);
@@ -40,6 +41,8 @@ public class DatosIniciales {
         club.setSesiones(sesiones);
         club.setMiembros(miembros);
         club.setNombre("JavaDictos");
+        d1.addMember(new Joven("jhon","juan@",1234));
+        d2.addMember(new Joven("Lala","la@",1234));
         return club;
     }
 }

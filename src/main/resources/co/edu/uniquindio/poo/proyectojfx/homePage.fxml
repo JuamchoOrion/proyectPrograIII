@@ -20,7 +20,7 @@
             <Button fx:id="AdministradorButton" mnemonicParsing="false" text="Administrador" />
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../java/Imagenes/blogger.png" />
+                  <Image url="@blogger.png" />
                </image>
             </ImageView>
          </items>
@@ -30,7 +30,7 @@
             <Button fx:id="MiembroButton" mnemonicParsing="false" text="Miembro" />
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../java/Imagenes/grupo.png" />
+                  <Image url="@grupo.png" />
                </image>
             </ImageView>
          </items>
@@ -40,7 +40,7 @@
             <Button fx:id="EntrenadorButton" mnemonicParsing="false" text="Entrenador" />
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../java/Imagenes/personal.png" />
+                  <Image url="@personal.png" />
                </image>
             </ImageView>
          </items>

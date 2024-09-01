@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ToolBar;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -14,8 +15,19 @@ import java.io.IOException;
 public class HomePageController {
 
     @FXML
-    private Button AdministradorButton; // ID del botón en homePage.fxml
+    private Button AdministradorButton;
+    // ID del botón en homePage.fxml
+    @FXML
+    private ToolBar Entrenador;
 
+    @FXML
+    private Button EntrenadorButton;
+
+    @FXML
+    private ToolBar Miembro;
+
+    @FXML
+    private Button MiembroButton;
     @FXML
     public void initialize() {
         AdministradorButton.setOnAction(event -> cambiarVista("loginAdmin.fxml"));

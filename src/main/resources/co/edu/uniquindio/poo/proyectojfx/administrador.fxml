@@ -10,16 +10,16 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.proyectojfx.AdministradorController">
+<AnchorPane prefHeight="605.0" prefWidth="1085.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.proyectojfx.AdministradorController">
     <children>
-        <TableView fx:id="tablaSesiones" layoutX="3.0" layoutY="301.0" prefHeight="304.0" prefWidth="1021.0">
+        <TableView fx:id="tablaSesiones" layoutX="3.0" layoutY="301.0" prefHeight="304.0" prefWidth="1229.0">
             <columns>
                 <TableColumn fx:id="sesion" prefWidth="78.0" text="Sesion" />
                 <TableColumn fx:id="fecha" prefWidth="189.0" text="Fecha" />
                 <TableColumn fx:id="duracion" prefWidth="194.0" text="Duración" />
                 <TableColumn fx:id="estado" prefWidth="173.0" text="Estado" />
-                <TableColumn fx:id="deporte" prefWidth="148.8" text="Deporte" />
-                <TableColumn fx:id="entrenador" prefWidth="236.0" text="Entrenador" />
+                <TableColumn fx:id="deporte" prefWidth="323.0" text="Deporte" />
+                <TableColumn fx:id="entrenador" prefWidth="271.0" text="Entrenador" />
             </columns>
         </TableView>
         <HBox layoutX="68.0" layoutY="24.0" prefHeight="25.0" prefWidth="70.0" />
@@ -64,18 +64,18 @@
                 <TextField fx:id="txtEstado" prefHeight="25.0" prefWidth="200.0" />
             </children>
         </HBox>
-        <HBox layoutX="1016.0" layoutY="55.0" prefHeight="25.0" prefWidth="249.0">
-            <children>
-                <Label prefHeight="25.0" prefWidth="75.0" text="Deporte:">
-                    <font>
-                        <Font size="14.0" />
-                    </font>
-                </Label>
-                <ComboBox fx:id="comboDeporte" prefHeight="25.0" prefWidth="200.0" />
-            </children>
-        </HBox>
-        <Button fx:id="btnAgregar" layoutX="831.0" layoutY="180.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" text="Agregar" />
-        <Button fx:id="btnEliminar" layoutX="831.0" layoutY="217.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" text="Eliminar" />
-        <Button fx:id="btnActualizar" layoutX="831.0" layoutY="259.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" text="Actualizar" />
+        <HBox layoutX="1016.0" layoutY="55.0" prefHeight="25.0" prefWidth="249.0" />
+        <Button fx:id="btnAgregar" layoutX="590.0" layoutY="180.0" mnemonicParsing="false" onAction="#agregarSesion" prefHeight="25.0" prefWidth="118.0" text="Agregar" />
+        <Button fx:id="btnEliminar" layoutX="455.0" layoutY="215.0" mnemonicParsing="false" onAction="#eliminarSesion" prefHeight="25.0" prefWidth="118.0" text="Eliminar" />
+        <Button fx:id="btnActualizar" layoutX="590.0" layoutY="215.0" mnemonicParsing="false" onAction="#actualizarSesion" prefHeight="25.0" prefWidth="118.0" text="Actualizar" />
+        <Button fx:id="AnadirMiembro" layoutX="455.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleAgregarMiembro" prefHeight="25.0" prefWidth="118.0" text="Añadir Miembro" />
+        <Button fx:id="btnVerDeportes" layoutX="726.0" layoutY="180.0" onAction="#mostrarDeportes" text="Ver Deportes" />
+        <Button fx:id="btnVerEntrenadores" layoutX="726.0" layoutY="215.0" onAction="#mostrarEntrenadores" text="Ver Entrenadores" />
+          <ComboBox fx:id="comboDeporte" layoutX="762.0" layoutY="117.0" prefHeight="25.0" prefWidth="200.0" />
+          <Label layoutX="687.0" layoutY="117.0" prefHeight="25.0" prefWidth="75.0" text="Deporte:">
+              <font>
+                  <Font size="14.0" />
+              </font>
+          </Label>
     </children>
 </AnchorPane>

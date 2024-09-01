@@ -17,7 +17,7 @@ public class HelloApplication extends Application {
         club = DatosIniciales.crearClubConDatosIniciales();
         ClubManager.setClubInstance(club);
 
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("loginAdmin.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("homePage.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
 
         stage.setTitle("Página de inicio");

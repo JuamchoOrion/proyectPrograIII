@@ -1,5 +1,6 @@
 package co.edu.uniquindio.poo.proyectojfx.Modelo;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
@@ -36,7 +37,14 @@ public class Club {
         this.miembros = miembros;
     }
 
-    public Club(List<SesionEntrenamiento> sesiones, String clubDeportivo, List<Miembro> miembros, List<Entrenador> entrenadores, List<Deporte> deportes, List<Administrador> administrativos) {
+    public Club(List<SesionEntrenamiento> sesiones, String clubDeportivo, List<Miembro> miembros,
+                List<Entrenador> entrenadores, List<Deporte> deportes, List<Administrador> administrativos) {
+        this.sesiones = sesiones != null ? sesiones : new ArrayList<>();
+        this.nombre = clubDeportivo != null ? clubDeportivo : "";
+        this.miembros = miembros != null ? miembros : new ArrayList<>();
+        this.entrenadores = entrenadores != null ? entrenadores : new ArrayList<>();
+        this.deportes = deportes != null ? deportes : new ArrayList<>();
+        this.administrativos = administrativos != null ? administrativos : new ArrayList<>();
     }
 
     // Getters y Setters
