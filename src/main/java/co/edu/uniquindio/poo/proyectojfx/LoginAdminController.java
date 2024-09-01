@@ -54,7 +54,7 @@ public class LoginAdminController {
         if (club.verificarAdministrador(nombre, id)) {
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("administrador.fxml"));
-                Scene scene = new Scene(loader.load());
+                Scene scene = new Scene(loader.load(), HelloApplication.getWidth(), HelloApplication.getHeight()); // Establecer dimensiones
 
                 // Obtener el controlador de la vista de administrador y pasarle el Club
                 AdministradorController controller = loader.getController();

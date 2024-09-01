@@ -39,9 +39,12 @@ public class HomePageController {
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxml));
             Parent root = loader.load();
 
-            // Obtener el escenario actual y cambiar la escena
+            // Obtener el escenario actual
             Stage stage = (Stage) AdministradorButton.getScene().getWindow();
-            stage.setScene(new Scene(root));
+
+            // Establecer el tamaño de la nueva escena
+            Scene scene = new Scene(root, HelloApplication.getWidth(), HelloApplication.getHeight());
+            stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();

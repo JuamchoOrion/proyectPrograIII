@@ -2,19 +2,17 @@ package co.edu.uniquindio.poo.proyectojfx;
 
 import co.edu.uniquindio.poo.proyectojfx.Modelo.Club;
 import co.edu.uniquindio.poo.proyectojfx.Modelo.ClubManager;
-import co.edu.uniquindio.poo.proyectojfx.Modelo.DatosIniciales;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
-import static javafx.application.Application.launch;
+import co.edu.uniquindio.poo.proyectojfx.Modelo.DatosIniciales;
 
 public class HelloApplication extends Application {
 
-    public static final int ANCHO_VENTANA = 1300;
-    public static final int ALTO_VENTANA = 800;
-
+    private static final int WIDTH = 1100;   // Ancho estándar
+    private static final int HEIGHT = 700; // Alto estándar
     private static Club club;
 
     @Override
@@ -23,10 +21,11 @@ public class HelloApplication extends Application {
         ClubManager.setClubInstance(club);
 
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("homePage.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), ANCHO_VENTANA, ALTO_VENTANA);
+        Parent root = fxmlLoader.load();
 
-        stage.setTitle("Página de inicio");
+        Scene scene = new Scene(root, WIDTH, HEIGHT);
         stage.setScene(scene);
+        stage.setTitle("JavaDictos");
         stage.show();
     }
 
@@ -37,4 +36,13 @@ public class HelloApplication extends Application {
     public static Club getClub() {
         return club;
     }
+
+    public static int getWidth() {
+        return WIDTH;
+    }
+
+    public static int getHeight() {
+        return HEIGHT;
+    }
 }
+
