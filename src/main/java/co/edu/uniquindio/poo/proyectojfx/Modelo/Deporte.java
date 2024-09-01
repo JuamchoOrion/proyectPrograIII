@@ -74,7 +74,7 @@ public class Deporte {
 
     public void addMember(Miembro member){
         if(member instanceof Joven && this.dificultad.equals(Dificultad.ALTO)){
-            throw new IllegalArgumentException("no se puede inscrbir en dificultad alta si es joven");
+            throw new IllegalArgumentException("No se puede inscribir al miembro " + member.getNombre() + "  en una dificultad alta");
         }
         else{
             miembros.add(member);
