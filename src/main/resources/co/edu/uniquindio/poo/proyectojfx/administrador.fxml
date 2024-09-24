@@ -26,7 +26,7 @@
         <HBox layoutX="547.0" layoutY="24.0" prefHeight="25.0" prefWidth="70.0" />
         <HBox layoutX="56.0" layoutY="180.0" prefHeight="25.0" prefWidth="303.0">
             <children>
-                <Label prefHeight="25.0" prefWidth="75.0" text="Entrenador:">
+                <Label fx:id="entrenadorLabel" prefHeight="25.0" prefWidth="75.0" text="Entrenador:">
                     <font>
                         <Font size="14.0" />
                     </font>
@@ -36,7 +36,7 @@
         </HBox>
         <HBox layoutX="362.0" layoutY="55.0" prefHeight="25.0" prefWidth="303.0">
             <children>
-                <Label prefHeight="25.0" prefWidth="78.0" text="Duración:">
+                <Label fx:id="duracionLabel" prefHeight="25.0" prefWidth="78.0" text="Duración:">
                     <font>
                         <Font size="14.0" />
                     </font>
@@ -46,7 +46,7 @@
         </HBox>
         <HBox layoutX="56.0" layoutY="55.0" prefHeight="25.0" prefWidth="249.0">
             <children>
-                <Label prefHeight="25.0" prefWidth="75.0" text="Fecha:">
+                <Label fx:id="fechaLabel" prefHeight="25.0" prefWidth="75.0" text="Fecha:">
                     <font>
                         <Font size="14.0" />
                     </font>
@@ -56,7 +56,7 @@
         </HBox>
         <HBox layoutX="687.0" layoutY="55.0" prefHeight="25.0" prefWidth="249.0">
             <children>
-                <Label prefHeight="25.0" prefWidth="75.0" text="Estado:">
+                <Label fx:id="estadoLabel" prefHeight="25.0" prefWidth="75.0" text="Estado:">
                     <font>
                         <Font size="14.0" />
                     </font>
@@ -64,7 +64,10 @@
                 <TextField fx:id="txtEstado" prefHeight="25.0" prefWidth="200.0" />
             </children>
         </HBox>
-        <HBox layoutX="1016.0" layoutY="55.0" prefHeight="25.0" prefWidth="249.0" />
+        <HBox layoutX="1016.0" layoutY="55.0" prefHeight="25.0" prefWidth="249.0">
+         <children>
+            <ComboBox fx:id="comboIdioma" prefWidth="150.0" />
+         </children></HBox>
         <Button fx:id="btnAgregar" layoutX="590.0" layoutY="180.0" mnemonicParsing="false" onAction="#agregarSesion" prefHeight="25.0" prefWidth="118.0" text="Agregar" />
         <Button fx:id="btnEliminar" layoutX="455.0" layoutY="215.0" mnemonicParsing="false" onAction="#eliminarSesion" prefHeight="25.0" prefWidth="118.0" text="Eliminar" />
         <Button fx:id="btnActualizar" layoutX="590.0" layoutY="215.0" mnemonicParsing="false" onAction="#actualizarSesion" prefHeight="25.0" prefWidth="118.0" text="Actualizar" />
@@ -72,10 +75,11 @@
         <Button fx:id="btnVerDeportes" layoutX="726.0" layoutY="180.0" onAction="#mostrarDeportes" text="Ver Deportes" />
         <Button fx:id="btnVerEntrenadores" layoutX="726.0" layoutY="215.0" onAction="#mostrarEntrenadores" text="Ver Entrenadores" />
           <ComboBox fx:id="comboDeporte" layoutX="762.0" layoutY="117.0" prefHeight="25.0" prefWidth="200.0" />
-          <Label layoutX="687.0" layoutY="117.0" prefHeight="25.0" prefWidth="75.0" text="Deporte:">
+          <Label fx:id="deporteLabel" layoutX="687.0" layoutY="117.0" prefHeight="25.0" prefWidth="75.0" text="Deporte:">
               <font>
                   <Font size="14.0" />
               </font>
           </Label>
+      <Label fx:id="idioma" layoutX="976.0" layoutY="59.0" text="Idioma" />
     </children>
 </AnchorPane>

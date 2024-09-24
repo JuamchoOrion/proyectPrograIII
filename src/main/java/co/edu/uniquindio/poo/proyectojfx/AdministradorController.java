@@ -13,6 +13,8 @@ import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 public class AdministradorController {
 
@@ -60,12 +62,32 @@ public class AdministradorController {
 
     @FXML
     private Button btnActualizar;
+    // Agregar las referencias a los labels
+    @FXML
+    private Label entrenadorLabel;
+
+    @FXML
+    private Label duracionLabel;
+
+    @FXML
+    private Label fechaLabel;
+
+    @FXML
+    private Label estadoLabel;
+
+    @FXML
+    private Label deporteLabel;
+
+    @FXML
+    private ComboBox<String> comboIdioma; // ComboBox para seleccionar idioma
 
     private ObservableList<SesionEntrenamiento> sesionesList = FXCollections.observableArrayList();
     private ObservableList<Deporte> deportesList = FXCollections.observableArrayList();
     private ObservableList<Entrenador> entrenadoresList = FXCollections.observableArrayList();
 
     private Club club;
+
+    private ResourceBundle bundle;  // Para manejar las traducciones
 
     @FXML
     public void initialize() {
@@ -76,8 +98,50 @@ public class AdministradorController {
         estado.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getEstado().name()));
         deporte.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getDeporte().toString()));
         entrenador.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getEntrenador().toString()));
+
+        // Inicializar el ComboBox de idiomas
+        comboIdioma.getItems().addAll("Español", "English", "Français");
+        comboIdioma.setOnAction(event -> cambiarIdioma()); // Cambia el idioma cuando seleccionas uno en el ComboBox
+
+        // Cargar el idioma por defecto (Español)
+        cargarIdioma(new Locale("es", "CO"));
     }
 
+    // Método para cambiar el idioma según la selección en el ComboBox
+    private void cambiarIdioma() {
+        String idiomaSeleccionado = comboIdioma.getValue();
+
+        if ("English".equals(idiomaSeleccionado)) {
+            cargarIdioma(new Locale("en", "US"));
+        } else if ("Français".equals(idiomaSeleccionado)) {
+            cargarIdioma(new Locale("fr", "FR"));
+        } else {
+            cargarIdioma(new Locale("es", "CO"));
+        }
+    }
+
+    // Método para cargar el archivo de propiedades correspondiente al idioma seleccionado
+    private void cargarIdioma(Locale locale) {
+        bundle = ResourceBundle.getBundle("resources/homePage", locale);
+        actualizarTextos();
+    }
+
+    // Método para actualizar los textos de la interfaz según el idioma cargado
+    private void actualizarTextos() {
+        txtFecha.setPromptText(bundle.getString("fecha"));
+        txtDuracion.setPromptText(bundle.getString("duracion"));
+        txtEstado.setPromptText(bundle.getString("estado"));
+        btnAgregar.setText(bundle.getString("agregar"));
+        btnEliminar.setText(bundle.getString("eliminar"));
+        btnActualizar.setText(bundle.getString("actualizar"));
+
+        // Actualizar los textos de los labels
+        entrenadorLabel.setText(bundle.getString("entrenador"));
+        duracionLabel.setText(bundle.getString("duracion"));
+        fechaLabel.setText(bundle.getString("fecha"));
+        estadoLabel.setText(bundle.getString("estado"));
+        deporteLabel.setText(bundle.getString("deporte"));
+    }
     public void setClub(Club club) {
         this.club = club;
 
@@ -86,12 +150,6 @@ public class AdministradorController {
         entrenadoresList.setAll(club.getEntrenadores());
         sesionesList.setAll(club.getSesiones());
 
-        // Imprimir datos para verificar
-        System.out.println("Deportes: " + deportesList);
-        System.out.println("Entrenadores: " + entrenadoresList);
-        System.out.println("Sesiones: " + sesionesList);
-
-        // Asegúrate de que los elementos no sean null antes de intentar usarlos
         if (comboDeporte != null) {
             comboDeporte.setItems(deportesList);
         }
@@ -102,7 +160,6 @@ public class AdministradorController {
             tablaSesiones.setItems(sesionesList);
         }
 
-        // Seleccionar los primeros elementos por defecto
         if (!deportesList.isEmpty()) {
             comboDeporte.getSelectionModel().selectFirst();
         }
@@ -159,6 +216,7 @@ public class AdministradorController {
             }
         }
     }
+
     @FXML
     private void mostrarDeportes() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/uniquindio/poo/proyectojfx/DeportesView.fxml"));
@@ -186,6 +244,7 @@ public class AdministradorController {
         stage.setTitle("Entrenadores del Club");
         stage.show();
     }
+
     private void limpiarCampos() {
         txtFecha.clear();
         txtDuracion.clear();
@@ -207,7 +266,8 @@ public class AdministradorController {
         alert.setContentText(content);
         alert.showAndWait();
     }
-    public void handleAgregarMiembro() { // Este es el nombre correcto del método
+
+    public void handleAgregarMiembro() {
         SesionEntrenamiento sesionSeleccionada = tablaSesiones.getSelectionModel().getSelectedItem();
 
         if (sesionSeleccionada != null) {
@@ -230,7 +290,4 @@ public class AdministradorController {
             System.out.println("Por favor, seleccione una sesión primero.");
         }
     }
-
-
-
 }
