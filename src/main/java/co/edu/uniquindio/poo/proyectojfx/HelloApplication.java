@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 import co.edu.uniquindio.poo.proyectojfx.Modelo.DatosIniciales;
 
 public class HelloApplication extends Application {
-
+    private LoggingExample loggingExample = new LoggingExample();
     private static final int WIDTH = 1100;   // Ancho estándar
     private static final int HEIGHT = 700; // Alto estándar
     private static Club club;
@@ -22,6 +22,7 @@ public class HelloApplication extends Application {
 
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("homePage.fxml"));
         Parent root = fxmlLoader.load();
+        loggingExample.logInfo("Se inició la app");
 
         Scene scene = new Scene(root, WIDTH, HEIGHT);
         stage.setScene(scene);

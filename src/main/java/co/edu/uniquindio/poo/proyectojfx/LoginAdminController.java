@@ -15,6 +15,8 @@ import java.io.IOException;
 
 public class LoginAdminController {
 
+    private LoggingExample loggingExample = new LoggingExample();
+
     @FXML
     private TextField inputId;
 
@@ -39,6 +41,8 @@ public class LoginAdminController {
         // Verificar que no estén vacíos
         if (nombre.isEmpty() || idString.isEmpty()) {
             showAlert(AlertType.ERROR, "Campos vacíos", "Por favor, complete todos los campos.");
+            loggingExample.logInfo("Campo vacio");
+
             return;
         }
 
@@ -69,6 +73,7 @@ public class LoginAdminController {
             }
         } else {
             showAlert(AlertType.ERROR, "Acceso denegado", "El nombre o ID del administrador es incorrecto.");
+            loggingExample.logWarning("Acceso denegado");
         }
     }
 
