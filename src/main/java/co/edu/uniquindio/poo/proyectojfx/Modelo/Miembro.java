@@ -1,12 +1,16 @@
 package co.edu.uniquindio.poo.proyectojfx.Modelo;
 
 
-public abstract class Miembro {
+import java.io.Serializable;
+
+public abstract class Miembro  implements Serializable {
     public Miembro() {
     }
     private String nombre;
     private String direccionCorreo;
     private int id;
+    private static final long serialVersionUID = 1L;
+
 
     public Miembro(String nombre, String direccionCorreo, int id) {
         this.nombre = nombre;

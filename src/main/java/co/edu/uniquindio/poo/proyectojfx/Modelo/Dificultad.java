@@ -1,4 +1,8 @@
 package co.edu.uniquindio.poo.proyectojfx.Modelo;
-public enum Dificultad {
+
+import java.io.Serializable;
+
+public enum Dificultad   {
+
     BAJO, MEDIO, ALTO
 }

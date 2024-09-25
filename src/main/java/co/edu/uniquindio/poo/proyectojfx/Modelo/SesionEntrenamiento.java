@@ -1,13 +1,15 @@
 package co.edu.uniquindio.poo.proyectojfx.Modelo;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class SesionEntrenamiento {
+public class SesionEntrenamiento implements Serializable {
     private String fechaInicio;
     private double duracion;
     private Estado estado;
     private Deporte deporte;
     private Entrenador entrenador;
+    private static final long serialVersionUID = 1L;
 
     public SesionEntrenamiento(String fechaInicio, double duracion, Estado estado, Deporte deporte, Entrenador entrenador) {
         this.fechaInicio = fechaInicio;

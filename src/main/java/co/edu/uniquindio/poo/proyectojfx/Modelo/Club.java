@@ -1,5 +1,6 @@
 package co.edu.uniquindio.poo.proyectojfx.Modelo;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -9,7 +10,7 @@ import java.util.stream.Collectors;
 /**
  * Representa un club que gestiona sesiones de entrenamiento, miembros, entrenadores, deportes y administradores.
  */
-public class Club {
+public class Club implements Serializable {
 
     private List<SesionEntrenamiento> sesionesEntrenamiento;
     private String nombre;
@@ -18,6 +19,8 @@ public class Club {
     private List<Deporte> deportes;
     private List<Administrador> administrativos;
     private List<SesionEntrenamiento> sesiones;
+    private static final long serialVersionUID = 1L;
+
 
     /**
      * Constructor vacío.
@@ -49,12 +52,13 @@ public class Club {
 
     // Getters y Setters
 
+    //este no
     public List<SesionEntrenamiento> getSesionesEntrenamiento() {
         return sesionesEntrenamiento;
     }
 
     public void setSesionesEntrenamiento(List<SesionEntrenamiento> sesionesEntrenamiento) {
-        this.sesionesEntrenamiento = sesionesEntrenamiento;
+        this.sesiones = sesionesEntrenamiento;
     }
 
     public List<Administrador> getAdministrativos() {

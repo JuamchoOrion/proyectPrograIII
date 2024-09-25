@@ -81,5 +81,6 @@
               </font>
           </Label>
       <Label fx:id="idioma" layoutX="976.0" layoutY="59.0" text="Idioma" />
+      <Button fx:id="btnAgregarEnntrenador" layoutX="850.0" layoutY="180.0" onAction="#mostrarAgregarEntrenador" text="Agregar Entrenador" />
     </children>
 </AnchorPane>

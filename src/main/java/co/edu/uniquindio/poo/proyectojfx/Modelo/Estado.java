@@ -1,7 +1,8 @@
 package co.edu.uniquindio.poo.proyectojfx.Modelo;
 
-public enum Estado {
+import java.io.Serializable;
+
+public enum Estado  {
     PROGRAMADA,
     COMPLETA
-
 }

@@ -1,20 +1,26 @@
 package co.edu.uniquindio.poo.proyectojfx.Modelo;
 
 
+import java.io.Serializable;
 import java.lang.reflect.Member;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Deporte {
+public class Deporte implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     public Deporte(){
         this.entrenadores = new ArrayList<>();
         this.miembros = new ArrayList<>();
+
     }
     private String nombre;
     private String descripcion;
     private Dificultad dificultad;
     private List<Entrenador> entrenadores;
     private List<Miembro> miembros;
+
+
 
     public Deporte(String nombre, String descripcion, Dificultad dificultad, List<Entrenador> entrenadores, List<Miembro> miembros) {
         this.nombre = nombre;

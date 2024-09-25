@@ -1,18 +1,22 @@
 package co.edu.uniquindio.poo.proyectojfx.Modelo;
 
 
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 //Agregar ID
-public class Entrenador {
+public class Entrenador implements Serializable {
     private String nombre;
     private Deporte especialidad;
     private List<SesionEntrenamiento> sesionesEntrenamiento;
     private String id;
+    private static final long serialVersionUID = 1L;
+
 
     public Entrenador(String nombre, Deporte especialidad, List<SesionEntrenamiento> sesionesEntrenamiento, String id) {
         this.nombre = nombre;
         this.especialidad = especialidad;
-        this.sesionesEntrenamiento = sesionesEntrenamiento;
+        this.sesionesEntrenamiento = sesionesEntrenamiento != null ? sesionesEntrenamiento : new ArrayList<>();
         this.id = id;
     }
 

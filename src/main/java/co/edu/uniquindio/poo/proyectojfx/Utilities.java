@@ -1,13 +1,13 @@
 package co.edu.uniquindio.poo.proyectojfx;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import co.edu.uniquindio.poo.proyectojfx.Modelo.SesionEntrenamiento;
+
+import java.io.*;
 import java.util.List;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
+
 
 public class Utilities {
 
@@ -106,4 +106,51 @@ public class Utilities {
     public void generarArchivoDeportes(List<?> deportes) throws IOException {
         escribirListaEnArchivo("deportes.txt", deportes);
     }
+
+    public boolean serializarObjeto(String direccionArchivo, Serializable objeto) {
+        boolean sw = false;
+        try (FileOutputStream fos = new FileOutputStream(direccionArchivo);
+             ObjectOutputStream salida = new ObjectOutputStream(fos)) {
+            salida.writeObject(objeto);
+            sw = true;
+            logInfo("Objeto serializado con éxito: " + direccionArchivo);
+        } catch (Exception e) {
+            logSevere("Error al serializar objeto: " + e.getMessage());
+        }
+        return sw;
+    }
+
+    // Método para deserializar un objeto
+    public <E> E deserializarObjeto(String direccionArchivo, Class<E> claseObjetivo) {
+        E objeto = null;
+        try (FileInputStream fis = new FileInputStream(direccionArchivo);
+             ObjectInputStream entrada = new ObjectInputStream(fis)) {
+            objeto = (E) entrada.readObject();
+            logInfo("Objeto deserializado con éxito: " + direccionArchivo);
+        } catch (Exception e) {
+            logSevere("Error al deserializar objeto: " + e.getMessage());
+        }
+        return objeto;
+    }
+
+    public List<SesionEntrenamiento> deserializarSesiones(String rutaArchivo) throws IOException, ClassNotFoundException {
+        List<SesionEntrenamiento> sesiones;
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(rutaArchivo))) {
+            sesiones = (List<SesionEntrenamiento>) ois.readObject();
+        }
+        return sesiones;
+    }
+
+    // metodo para generar el archivo de sesisones
+    public void generarArchivoSesiones(List<SesionEntrenamiento> sesiones) throws IOException {
+        if (sesiones != null) {
+            boolean result = serializarObjeto(DIRECTORIO_BASE + "sesiones.dat", (Serializable) sesiones);
+            if (!result) {
+                throw new IOException("Error al serializar la lista de sesiones");
+            }
+        } else {
+            throw new IllegalArgumentException("La lista de sesiones no puede ser nula");
+        }
+    }
+
 }

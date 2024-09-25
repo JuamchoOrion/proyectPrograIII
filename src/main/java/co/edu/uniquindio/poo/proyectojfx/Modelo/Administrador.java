@@ -1,11 +1,14 @@
 package co.edu.uniquindio.poo.proyectojfx.Modelo;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.List;
 
-public class Administrador implements GestionSesiones, GestionEntrenadores, GestionMiembros, GestionDeportes {
+public class Administrador implements GestionSesiones, GestionEntrenadores, GestionMiembros, GestionDeportes, Serializable {
     private String nombre;
     private int id;
+    private static final long serialVersionUID = 1L;
+
 
     public Administrador() {
     }

@@ -236,7 +236,24 @@ public class AdministradorController {
         stage.setTitle("Deportes del Club");
         stage.show();
     }
+    @FXML
+    private void mostrarAgregarEntrenador() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/uniquindio/poo/proyectojfx/AgregarEntrenador.fxml"));
+        Parent root = loader.load();
 
+        AgregarEntrenadorController controller = loader.getController();
+        controller.setClub(club); // Pasar la instancia del Club
+        controller.setAdministradorController(this); // Pasar el controlador del administrador
+
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.setTitle("Agregar Entrenador");
+        stage.show();
+    }
+    public void actualizarComboBoxEntrenadores(Entrenador nuevoEntrenador) {
+        comboEntrenador.getItems().add(nuevoEntrenador); // Agrega el nuevo entrenador al ComboBox
+        showAlert(Alert.AlertType.INFORMATION, "Entrenador Agregado", "Entrenador agregado con éxito: " + nuevoEntrenador.getNombre(), "");
+    }
     @FXML
     private void mostrarEntrenadores() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/uniquindio/poo/proyectojfx/EntrenadoresView.fxml"));

@@ -22,3 +22,297 @@ Sep 24, 2024 10:54:13 PM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
 INFO: Archivo escrito con éxito: deportes.txt
 Sep 24, 2024 10:54:13 PM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
 INFO: Datos del club guardados correctamente.
+Sep 25, 2024 12:26:52 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se inició correctamente.
+Sep 25, 2024 12:27:13 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicacion se ha cerrado. 
+Sep 25, 2024 12:27:13 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 12:27:13 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: miembros.txt
+Sep 25, 2024 12:27:13 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 12:27:13 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: deportes.txt
+Sep 25, 2024 12:27:13 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Datos del club guardados correctamente.
+Sep 25, 2024 12:31:03 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se inició correctamente.
+Sep 25, 2024 12:31:25 AM co.edu.uniquindio.poo.proyectojfx.Utilities logWarning
+WARNING: Sesión actualizada con datos inválidos
+Sep 25, 2024 12:31:41 AM co.edu.uniquindio.poo.proyectojfx.Utilities logWarning
+WARNING: Sesión actualizada con estado invalido
+Sep 25, 2024 12:31:45 AM co.edu.uniquindio.poo.proyectojfx.Utilities logWarning
+WARNING: Sesión actualizada con estado invalido
+Sep 25, 2024 12:31:59 AM co.edu.uniquindio.poo.proyectojfx.Utilities logWarning
+WARNING: Sesión actualizada con estado invalido
+Sep 25, 2024 12:32:10 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se ha cerrado.
+Sep 25, 2024 12:32:10 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 12:32:10 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: miembros.txt
+Sep 25, 2024 12:32:10 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 12:32:10 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: deportes.txt
+Sep 25, 2024 12:32:10 AM co.edu.uniquindio.poo.proyectojfx.Utilities logSevere
+SEVERE: Error al guardar los datos del club: La lista de sesiones no puede ser nula
+Sep 25, 2024 12:33:36 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se inició correctamente.
+Sep 25, 2024 12:33:48 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se ha cerrado.
+Sep 25, 2024 12:33:48 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 12:33:48 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: miembros.txt
+Sep 25, 2024 12:33:48 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 12:33:48 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: deportes.txt
+Sep 25, 2024 12:33:48 AM co.edu.uniquindio.poo.proyectojfx.Utilities logSevere
+SEVERE: Error al guardar los datos del club: La lista de sesiones no puede ser nula
+Sep 25, 2024 12:36:44 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se inició correctamente.
+Sep 25, 2024 12:37:01 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se ha cerrado.
+Sep 25, 2024 12:37:01 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 12:37:01 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: miembros.txt
+Sep 25, 2024 12:37:01 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 12:37:01 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: deportes.txt
+Sep 25, 2024 12:37:01 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Objeto serializado con éxito: C://Reportes_Java/sesiones.dat
+Sep 25, 2024 12:37:01 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Datos del club guardados correctamente.
+Sep 25, 2024 12:45:59 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Sesiones de entrenamiento cargadas correctamente.
+Sep 25, 2024 12:46:00 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se inició correctamente.
+Sep 25, 2024 12:46:31 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se ha cerrado.
+Sep 25, 2024 12:46:31 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 12:46:32 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: miembros.txt
+Sep 25, 2024 12:46:32 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 12:46:32 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: deportes.txt
+Sep 25, 2024 12:46:32 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Objeto serializado con éxito: C://Reportes_Java/sesiones.dat
+Sep 25, 2024 12:46:32 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Datos del club guardados correctamente.
+Sep 25, 2024 12:47:22 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Sesiones de entrenamiento cargadas correctamente.
+Sep 25, 2024 12:47:23 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se inició correctamente.
+Sep 25, 2024 12:48:25 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se ha cerrado.
+Sep 25, 2024 12:48:25 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 12:48:25 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: miembros.txt
+Sep 25, 2024 12:48:25 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 12:48:25 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: deportes.txt
+Sep 25, 2024 12:48:25 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Objeto serializado con éxito: C://Reportes_Java/sesiones.dat
+Sep 25, 2024 12:48:25 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Datos del club guardados correctamente.
+Sep 25, 2024 12:48:50 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Sesiones de entrenamiento cargadas correctamente.
+Sep 25, 2024 12:48:51 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se inició correctamente.
+Sep 25, 2024 12:49:05 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se ha cerrado.
+Sep 25, 2024 12:49:05 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 12:49:05 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: miembros.txt
+Sep 25, 2024 12:49:05 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 12:49:05 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: deportes.txt
+Sep 25, 2024 12:49:05 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Objeto serializado con éxito: C://Reportes_Java/sesiones.dat
+Sep 25, 2024 12:49:05 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Datos del club guardados correctamente.
+Sep 25, 2024 12:53:14 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Sesiones de entrenamiento cargadas correctamente.
+Sep 25, 2024 12:53:15 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se inició correctamente.
+Sep 25, 2024 12:53:41 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se ha cerrado.
+Sep 25, 2024 12:53:41 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 12:53:41 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: miembros.txt
+Sep 25, 2024 12:53:41 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 12:53:41 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: deportes.txt
+Sep 25, 2024 12:53:41 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Objeto serializado con éxito: C://Reportes_Java/sesiones.dat
+Sep 25, 2024 12:53:41 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Datos del club guardados correctamente.
+Sep 25, 2024 12:53:55 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Sesiones de entrenamiento cargadas correctamente.
+Sep 25, 2024 12:53:56 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se inició correctamente.
+Sep 25, 2024 12:54:07 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se ha cerrado.
+Sep 25, 2024 12:54:07 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 12:54:07 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: miembros.txt
+Sep 25, 2024 12:54:07 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 12:54:07 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: deportes.txt
+Sep 25, 2024 12:54:07 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Objeto serializado con éxito: C://Reportes_Java/sesiones.dat
+Sep 25, 2024 12:54:07 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Datos del club guardados correctamente.
+Sep 25, 2024 12:56:14 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Sesiones de entrenamiento cargadas correctamente.
+Sep 25, 2024 12:56:15 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se inició correctamente.
+Sep 25, 2024 12:56:19 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se ha cerrado.
+Sep 25, 2024 12:56:19 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 12:56:19 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: miembros.txt
+Sep 25, 2024 12:56:19 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 12:56:19 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: deportes.txt
+Sep 25, 2024 12:56:19 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Objeto serializado con éxito: C://Reportes_Java/sesiones.dat
+Sep 25, 2024 12:56:19 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Datos del club guardados correctamente.
+Sep 25, 2024 1:02:17 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Sesiones de entrenamiento cargadas correctamente.
+Sep 25, 2024 1:02:17 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se inició correctamente.
+Sep 25, 2024 1:02:21 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se ha cerrado.
+Sep 25, 2024 1:02:21 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 1:02:21 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: miembros.txt
+Sep 25, 2024 1:02:21 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 1:02:21 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: deportes.txt
+Sep 25, 2024 1:02:21 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Objeto serializado con éxito: C://Reportes_Java/sesiones.dat
+Sep 25, 2024 1:02:21 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Datos del club guardados correctamente.
+Sep 25, 2024 1:03:08 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Sesiones de entrenamiento cargadas correctamente.
+Sep 25, 2024 1:03:09 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se inició correctamente.
+Sep 25, 2024 1:03:56 AM co.edu.uniquindio.poo.proyectojfx.Utilities logWarning
+WARNING: Sesión actualizada con datos inválidos
+Sep 25, 2024 1:03:57 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se ha cerrado.
+Sep 25, 2024 1:03:57 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 1:03:57 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: miembros.txt
+Sep 25, 2024 1:03:57 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 1:03:57 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: deportes.txt
+Sep 25, 2024 1:03:57 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Objeto serializado con éxito: C://Reportes_Java/sesiones.dat
+Sep 25, 2024 1:03:57 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Datos del club guardados correctamente.
+Sep 25, 2024 1:04:12 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Sesiones de entrenamiento cargadas correctamente.
+Sep 25, 2024 1:04:12 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se inició correctamente.
+Sep 25, 2024 1:04:28 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se ha cerrado.
+Sep 25, 2024 1:04:28 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 1:04:28 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: miembros.txt
+Sep 25, 2024 1:04:28 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 1:04:28 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: deportes.txt
+Sep 25, 2024 1:04:29 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Objeto serializado con éxito: C://Reportes_Java/sesiones.dat
+Sep 25, 2024 1:04:29 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Datos del club guardados correctamente.
+Sep 25, 2024 1:08:27 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Sesiones de entrenamiento cargadas correctamente.
+Sep 25, 2024 1:08:28 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se inició correctamente.
+Sep 25, 2024 1:09:16 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se ha cerrado.
+Sep 25, 2024 1:09:16 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 1:09:16 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: miembros.txt
+Sep 25, 2024 1:09:16 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 1:09:16 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: deportes.txt
+Sep 25, 2024 1:09:16 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Objeto serializado con éxito: C://Reportes_Java/sesiones.dat
+Sep 25, 2024 1:09:16 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Datos del club guardados correctamente.
+Sep 25, 2024 1:09:42 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Sesiones de entrenamiento cargadas correctamente.
+Sep 25, 2024 1:09:43 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se inició correctamente.
+Sep 25, 2024 1:12:18 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Miembro agregado: juancho (ID: 192839)
+Sep 25, 2024 1:32:55 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Sesiones de entrenamiento cargadas correctamente.
+Sep 25, 2024 1:32:56 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se inició correctamente.
+Sep 25, 2024 1:33:12 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se ha cerrado.
+Sep 25, 2024 1:33:12 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 1:33:12 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: miembros.txt
+Sep 25, 2024 1:33:12 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 1:33:13 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: deportes.txt
+Sep 25, 2024 1:33:13 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Objeto serializado con éxito: C://Reportes_Java/sesiones.dat
+Sep 25, 2024 1:33:13 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Datos del club guardados correctamente.
+Sep 25, 2024 1:38:01 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Sesiones de entrenamiento cargadas correctamente.
+Sep 25, 2024 1:38:02 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se inició correctamente.
+Sep 25, 2024 1:47:58 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Sesiones de entrenamiento cargadas correctamente.
+Sep 25, 2024 1:47:59 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se inició correctamente.
+Sep 25, 2024 1:48:41 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se ha cerrado.
+Sep 25, 2024 1:48:41 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 1:48:41 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: miembros.txt
+Sep 25, 2024 1:48:41 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 25, 2024 1:48:41 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: deportes.txt
+Sep 25, 2024 1:48:41 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Objeto serializado con éxito: C://Reportes_Java/sesiones.dat
+Sep 25, 2024 1:48:41 AM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Datos del club guardados correctamente.
