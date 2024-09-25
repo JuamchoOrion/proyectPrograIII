@@ -11,6 +11,8 @@ public class SesionEntrenamiento implements Serializable {
     private Entrenador entrenador;
     private static final long serialVersionUID = 1L;
 
+    public SesionEntrenamiento() {
+    }
     public SesionEntrenamiento(String fechaInicio, double duracion, Estado estado, Deporte deporte, Entrenador entrenador) {
         this.fechaInicio = fechaInicio;
         this.duracion = duracion;

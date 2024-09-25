@@ -12,7 +12,8 @@ public class Entrenador implements Serializable {
     private String id;
     private static final long serialVersionUID = 1L;
 
-
+    public Entrenador() {
+    }
     public Entrenador(String nombre, Deporte especialidad, List<SesionEntrenamiento> sesionesEntrenamiento, String id) {
         this.nombre = nombre;
         this.especialidad = especialidad;
@@ -27,9 +28,6 @@ public class Entrenador implements Serializable {
 
     public void setId(String id) {
         this.id = id;
-    }
-
-    public Entrenador() {
     }
 
     public String getNombre() {

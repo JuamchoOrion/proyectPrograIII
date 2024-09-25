@@ -1,14 +1,11 @@
 package co.edu.uniquindio.poo.proyectojfx;
 
-import co.edu.uniquindio.poo.proyectojfx.Modelo.Club;
-import co.edu.uniquindio.poo.proyectojfx.Modelo.ClubManager;
-import co.edu.uniquindio.poo.proyectojfx.Modelo.SesionEntrenamiento; // Asegúrate de importar la clase
+import co.edu.uniquindio.poo.proyectojfx.Modelo.*;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import co.edu.uniquindio.poo.proyectojfx.Modelo.DatosIniciales;
 
 import java.io.IOException;
 import java.util.List;
@@ -33,6 +30,13 @@ public class HelloApplication extends Application {
             Utilities.getInstance().logInfo("Sesiones de entrenamiento cargadas correctamente.");
         } catch (IOException | ClassNotFoundException e) {
             Utilities.getInstance().logSevere("Error al cargar sesiones de entrenamiento: " + e.getMessage());
+        }
+        try {
+            List<Entrenador> entrenadoresDeserializados = Utilities.getInstance().deserializarEntrenadoresXML("C://Reportes_Java/" + "entrenadores.xml");
+            club.setEntrenadores(entrenadoresDeserializados); // Asegúrate de tener un método en Club para establecer entrenadores
+            Utilities.getInstance().logInfo("Entrenadores cargados correctamente.");
+        } catch (IOException e) {
+            Utilities.getInstance().logSevere("Error al cargar entrenadores: " + e.getMessage());
         }
 
         // Cargar el FXML
@@ -68,6 +72,12 @@ public class HelloApplication extends Application {
         } catch (Exception e) {
             // En caso de error, registrar un log de error
             Utilities.getInstance().logSevere("Error al guardar los datos del club: " + e.getMessage());
+        }
+        try {
+            Utilities.getInstance().generarArchivoEntrenadores(club.getEntrenadores());
+            Utilities.getInstance().logInfo("Datos del entrenador guardados correctamente.");
+        } catch (Exception e) {
+            Utilities.getInstance().logSevere("Error al guardar los datos del entrenador: " + e.getMessage());
         }
     }
 

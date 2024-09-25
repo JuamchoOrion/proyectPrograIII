@@ -1,7 +1,10 @@
 package co.edu.uniquindio.poo.proyectojfx;
 
+import co.edu.uniquindio.poo.proyectojfx.Modelo.Entrenador;
 import co.edu.uniquindio.poo.proyectojfx.Modelo.SesionEntrenamiento;
 
+import java.beans.XMLDecoder;
+import java.beans.XMLEncoder;
 import java.io.*;
 import java.util.List;
 import java.util.logging.FileHandler;
@@ -120,18 +123,6 @@ public class Utilities {
         return sw;
     }
 
-    // Método para deserializar un objeto
-    public <E> E deserializarObjeto(String direccionArchivo, Class<E> claseObjetivo) {
-        E objeto = null;
-        try (FileInputStream fis = new FileInputStream(direccionArchivo);
-             ObjectInputStream entrada = new ObjectInputStream(fis)) {
-            objeto = (E) entrada.readObject();
-            logInfo("Objeto deserializado con éxito: " + direccionArchivo);
-        } catch (Exception e) {
-            logSevere("Error al deserializar objeto: " + e.getMessage());
-        }
-        return objeto;
-    }
 
     public List<SesionEntrenamiento> deserializarSesiones(String rutaArchivo) throws IOException, ClassNotFoundException {
         List<SesionEntrenamiento> sesiones;
@@ -152,5 +143,46 @@ public class Utilities {
             throw new IllegalArgumentException("La lista de sesiones no puede ser nula");
         }
     }
+    // Método para serializar un objeto a XML usando XMLEncoder
+    public boolean serializarObjetoXML(String direccionArchivo, Serializable objeto) {
+        boolean sw = false;
+        try (FileOutputStream fos = new FileOutputStream(direccionArchivo);
+             XMLEncoder encoder = new XMLEncoder(fos)) {
+            encoder.writeObject(objeto);
+            sw = true;
+            logInfo("Objeto serializado a XML con éxito: " + direccionArchivo);
+        } catch (IOException e) {
+            logSevere("Error al serializar objeto a XML: " + e.getMessage());
+        }
+        return sw;
+    }
+
+
+    // Método para deserializar un objeto desde XML usando XMLDecoder
+    public List<Entrenador> deserializarEntrenadoresXML(String rutaArchivo) throws IOException {
+        List<Entrenador> entrenadores;
+        try (FileInputStream fis = new FileInputStream(rutaArchivo);
+             XMLDecoder decoder = new XMLDecoder(fis)) {
+            entrenadores = (List<Entrenador>) decoder.readObject();
+            logInfo("Lista de entrenadores deserializada con éxito desde: " + rutaArchivo);
+        } catch (IOException e) {
+            logSevere("Error al deserializar objeto desde XML: " + e.getMessage());
+            throw e;
+        }
+        return entrenadores;
+    }
+
+    // Método para generar archivo XML de entrenadores
+    public void generarArchivoEntrenadores(List<Entrenador> entrenadores) throws IOException {
+        if (entrenadores != null) {
+            boolean result = serializarObjetoXML(DIRECTORIO_BASE + "entrenadores.xml",(Serializable) entrenadores);
+            if (!result) {
+                throw new IOException("Error al serializar la lista de entrenadores a XML");
+            }
+        } else {
+            throw new IllegalArgumentException("La lista de entrenadores no puede ser nula");
+        }
+    }
+
 
 }
