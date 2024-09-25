@@ -48,6 +48,8 @@ public class AgregarMiembroController {
             id = Integer.parseInt(idTextField.getText());
         } catch (NumberFormatException e) {
             showAlert(Alert.AlertType.ERROR, "Error", "ID inválido", "Por favor, ingrese un ID válido.");
+            // Usar Singleton para el logging de advertencias
+            Utilities.getInstance().logWarning("Miembro creado con ID inválido");
             return; // Salir del método si el ID no es válido
         }
 
@@ -64,11 +66,16 @@ public class AgregarMiembroController {
             club.getMiembros().add(miembro);
             sesion.getDeporte().addMember(miembro);
 
+            // Usar Singleton para el logging de información
+            Utilities.getInstance().logInfo("Miembro agregado: " + nombre + " (ID: " + id + ")");
+
             // Cerrar la ventana después de agregar el miembro
             Stage stage = (Stage) nombreTextField.getScene().getWindow();
             stage.close();
         } catch (IllegalArgumentException e) {
             showAlert(Alert.AlertType.ERROR, "Error", "No se puede agregar miembro", e.getMessage());
+            // Usar Singleton para el logging de errores
+            Utilities.getInstance().logSevere("El miembro no se pudo agregar: " + e.getMessage());
         }
     }
 
@@ -79,6 +86,4 @@ public class AgregarMiembroController {
         alert.setContentText(content);
         alert.showAndWait();
     }
-
-
 }

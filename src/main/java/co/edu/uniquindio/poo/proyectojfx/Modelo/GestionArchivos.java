@@ -33,7 +33,7 @@ import java.util.List;
             List<String> listaEntidades2 = new ArrayList<>();
 
             // Agregar elementos de ejemplo a las listas
-            for (int i = 1; i <= 50; i++) {
+            for (int i = 1; i <= 10; i++) {
                 listaEntidades1.add("EntidadLista1-" + i);
                 listaEntidades2.add("EntidadLista2-" + i);
             }

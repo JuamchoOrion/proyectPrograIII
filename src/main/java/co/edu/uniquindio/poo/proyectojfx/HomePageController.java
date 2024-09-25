@@ -47,7 +47,8 @@ public class HomePageController {
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
-            e.printStackTrace();
+            // Registrar la excepción en lugar de imprimir el stack trace
+            Utilities.getInstance().logSevere("Error al cambiar la vista a ");
         }
     }
 }

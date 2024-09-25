@@ -15,8 +15,6 @@ import java.io.IOException;
 
 public class LoginAdminController {
 
-    private LoggingExample loggingExample = new LoggingExample();
-
     @FXML
     private TextField inputId;
 
@@ -41,8 +39,7 @@ public class LoginAdminController {
         // Verificar que no estén vacíos
         if (nombre.isEmpty() || idString.isEmpty()) {
             showAlert(AlertType.ERROR, "Campos vacíos", "Por favor, complete todos los campos.");
-            loggingExample.logInfo("Campo vacio");
-
+            Utilities.getInstance().logInfo("Campo vacio");
             return;
         }
 
@@ -53,7 +50,6 @@ public class LoginAdminController {
             showAlert(AlertType.ERROR, "ID inválido", "El ID debe ser un número entero.");
             return;
         }
-
         // Si nombre e ID coinciden en la lista de Club, cargar la vista de administrador
         if (club.verificarAdministrador(nombre, id)) {
             try {
@@ -70,10 +66,11 @@ public class LoginAdminController {
             } catch (IOException e) {
                 e.printStackTrace();
                 showAlert(AlertType.ERROR, "Error de carga", "No se pudo cargar la vista de administrador.");
+                Utilities.getInstance().logSevere("Ha ocurrido un error crítico");
             }
         } else {
             showAlert(AlertType.ERROR, "Acceso denegado", "El nombre o ID del administrador es incorrecto.");
-            loggingExample.logWarning("Acceso denegado");
+            Utilities.getInstance().logWarning("Acceso denegado");
         }
     }
 

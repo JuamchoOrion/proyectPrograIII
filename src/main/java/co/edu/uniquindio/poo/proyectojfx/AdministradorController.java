@@ -18,6 +18,8 @@ import java.util.ResourceBundle;
 
 public class AdministradorController {
 
+
+
     @FXML
     private TableView<SesionEntrenamiento> tablaSesiones;
 
@@ -183,8 +185,10 @@ public class AdministradorController {
             limpiarCampos();
         } catch (NumberFormatException e) {
             showAlert(Alert.AlertType.ERROR, "Error", "Datos inválidos", "Por favor, ingrese valores válidos.");
+            Utilities.getInstance().logWarning("Sesión con datos inválidos");
         } catch (IllegalArgumentException e) {
             showAlert(Alert.AlertType.ERROR, "Error", "Estado inválido", "El estado ingresado no es válido.");
+            Utilities.getInstance().logWarning("Sesión con estado inválido");
         }
     }
 
@@ -211,8 +215,10 @@ public class AdministradorController {
                 limpiarCampos();
             } catch (NumberFormatException e) {
                 showAlert(Alert.AlertType.ERROR, "Error", "Datos inválidos", "Por favor, ingrese valores válidos.");
+                Utilities.getInstance().logWarning("Sesión actualizada con datos inválidos");
             } catch (IllegalArgumentException e) {
                 showAlert(Alert.AlertType.ERROR, "Error", "Estado inválido", "El estado ingresado no es válido.");
+                Utilities.getInstance().logWarning("Sesión actualizada con estado invalido");
             }
         }
     }
@@ -288,6 +294,7 @@ public class AdministradorController {
         } else {
             // Mostrar una advertencia si no se selecciona ninguna sesión
             System.out.println("Por favor, seleccione una sesión primero.");
+            Utilities.getInstance().logWarning("No se seleccionó una sesión");
         }
     }
 }

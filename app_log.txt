@@ -1,0 +1,24 @@
+Sep 24, 2024 9:22:03 PM co.edu.uniquindio.poo.proyectojfx.LoggingExample logInfo
+INFO: Se inició la app
+Sep 24, 2024 9:22:16 PM co.edu.uniquindio.poo.proyectojfx.LoggingExample logWarning
+WARNING: Acceso denegado
+Sep 24, 2024 9:28:45 PM co.edu.uniquindio.poo.proyectojfx.LoggingExample logInfo
+INFO: Se inició la app
+Sep 24, 2024 9:29:45 PM co.edu.uniquindio.poo.proyectojfx.LoggingExample logInfo
+INFO: Se inició la app
+Sep 24, 2024 9:39:50 PM co.edu.uniquindio.poo.proyectojfx.LoggingExample logInfo
+INFO: Se inició la app
+Sep 24, 2024 9:40:52 PM co.edu.uniquindio.poo.proyectojfx.LoggingExample logSevere
+SEVERE: Ha ocurrido un error crítico
+Sep 24, 2024 10:54:02 PM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: La aplicación se inició correctamente.
+Sep 24, 2024 10:54:13 PM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 24, 2024 10:54:13 PM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: miembros.txt
+Sep 24, 2024 10:54:13 PM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: El directorio ya existe: C://Reportes_Java/
+Sep 24, 2024 10:54:13 PM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Archivo escrito con éxito: deportes.txt
+Sep 24, 2024 10:54:13 PM co.edu.uniquindio.poo.proyectojfx.Utilities logInfo
+INFO: Datos del club guardados correctamente.
