@@ -64,6 +64,14 @@ public class AdministradorController {
 
     @FXML
     private Button btnActualizar;
+    @FXML
+    private Button AnadirMiembro;
+    @FXML
+    private Button btnVerEntrenadores;
+    @FXML
+    private Button btnVerDeportes;
+    @FXML
+    private Button btnAgregarEnntrenador;
     // Agregar las referencias a los labels
     @FXML
     private Label entrenadorLabel;
@@ -74,6 +82,8 @@ public class AdministradorController {
     @FXML
     private Label fechaLabel;
 
+    @FXML
+    private Label idioma;
     @FXML
     private Label estadoLabel;
 
@@ -130,19 +140,29 @@ public class AdministradorController {
 
     // Método para actualizar los textos de la interfaz según el idioma cargado
     private void actualizarTextos() {
+        idioma.setText(bundle.getString("idioma"));
+        entrenadorLabel.setText(bundle.getString("lentrenador"));
+        duracionLabel.setText(bundle.getString("lduracion"));
+        fechaLabel.setText(bundle.getString("lfecha"));
+        estadoLabel.setText(bundle.getString("lestado"));
+        deporteLabel.setText(bundle.getString("ldeporte"));
         txtFecha.setPromptText(bundle.getString("fecha"));
         txtDuracion.setPromptText(bundle.getString("duracion"));
         txtEstado.setPromptText(bundle.getString("estado"));
         btnAgregar.setText(bundle.getString("agregar"));
         btnEliminar.setText(bundle.getString("eliminar"));
         btnActualizar.setText(bundle.getString("actualizar"));
+        sesion.setText(bundle.getString("sesion"));
+        fecha.setText(bundle.getString("fecha"));
+        duracion.setText(bundle.getString("duracion"));
+        estado.setText(bundle.getString("estado"));
+        deporte.setText(bundle.getString("deporte"));
+        entrenador.setText(bundle.getString("entrenador"));
+        AnadirMiembro.setText(bundle.getString("anadirMiembro"));
+        btnAgregarEnntrenador.setText(bundle.getString("anadirEntrenador"));
+        btnVerDeportes.setText(bundle.getString("verDeportes"));
+        btnVerEntrenadores.setText(bundle.getString("verEntrenadores"));
 
-        // Actualizar los textos de los labels
-        entrenadorLabel.setText(bundle.getString("entrenador"));
-        duracionLabel.setText(bundle.getString("duracion"));
-        fechaLabel.setText(bundle.getString("fecha"));
-        estadoLabel.setText(bundle.getString("estado"));
-        deporteLabel.setText(bundle.getString("deporte"));
     }
     public void setClub(Club club) {
         this.club = club;
